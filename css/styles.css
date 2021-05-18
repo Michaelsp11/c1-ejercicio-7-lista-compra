@@ -17,6 +17,18 @@ body {
     line-height: 1.8;
 }
 
+.top {
+  background-color: #5e81d1;
+
+}
+
+.barraInfo {
+  background-color: #f87500;
+}
+.contenido {
+  background-color: #ff8d27;
+}
+
 .form .label-form {
     display: block;
     color: var(--text-gray);
