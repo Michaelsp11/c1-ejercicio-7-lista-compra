@@ -3,6 +3,7 @@
 }
 
 body {
+    color: var(--text-gray);
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
@@ -10,6 +11,58 @@ body {
 :root {
     --text-gray: #333;
     --bg-cabecera: #5e81d1;
+    --bg-secundario: #ff8d27;
+    --bg-hover: #c16b1e;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+hr {
+    margin: 0;
+}
+
+.container-list,
+.hr,
+.container-result {
+    background-color: var(--bg-secundario);
+    padding: 0 15px;
+}
+
+.container-list .list .list-item {
+    display: flex;
+}
+
+.container-list .list .list-item:hover {
+    color: white;
+    background-color: var(--bg-hover);
+}
+
+.container-list .list .list-item .item {
+    flex: 2;
+}
+
+.container-list .list .list-item .item-hecho {
+    text-decoration: line-through;
+}
+
+.container-list .list .list-item .icon-x {
+    margin-left: 5px;
+}
+
+.container-result {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-result .result {
+    text-align: right;
 }
 
 .form {
@@ -19,7 +72,6 @@ body {
 
 .form .label-form {
     display: block;
-    color: var(--text-gray);
 }
 
 .form .input-form {

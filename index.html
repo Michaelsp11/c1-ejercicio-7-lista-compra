@@ -19,22 +19,44 @@
             <li>Acerca de</li>
         </ul>
         <section>
-          <i class="fas fa-plus-circle"></i>
-          <p>2/3 comprados</p>
+            <i class="fas fa-plus-circle"></i>
+            <p>2/3 comprados</p>
         </section>
     </header>
     <main>
         <section></section>
-        <section>
-            <ul>
-                <li><input type="checkbox" id="pan"><label for="pan">Pan</label><span>0.75€</span><i class="fas fa-times"></i></li>
-                <li><input type="checkbox" id="azucar"><label for="azucar">Azúcar</label><span></span><i class="fas fa-times"></i></li>
-                <li><input type="checkbox" id="leche"><label for="leche">Leche</label><span>1.20€</span><i class="fas fa-times"></i></li>
+        <section class="container-list">
+            <ul class="list">
+                <li class="list-item">
+                    <div class="item">
+                        <input type="checkbox" class="checkbox-list" id="pan">
+                        <span class="checkbox"></span>
+                        <label for="pan" class="item-hecho">Pan</label>
+                    </div>
+                    <div class="price">0.75€
+                        <i class="fas fa-times icon-x"></i>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="item">
+                        <input type="checkbox" class="checkbox-list" id="azucar">
+                        <label for="azucar">Azúcar</label>
+                    </div>
+                    <div class="price"><i class="fas fa-times icon-x"></i></div>
+                </li>
+                <li class="list-item">
+                    <div class="item">
+                        <input type="checkbox" class="checkbox-list" id="leche">
+                        <label for="leche" class="item-hecho">Leche</label></div>
+                    <div class="price">1.20€<i class="fas fa-times icon-x"></i>
+                    </div>
+
+                </li>
             </ul>
         </section>
-        <section>
-            <hr/>
-            <p>1.95€</p>
+        <section class="container-result">
+            <hr class="hr" />
+            <p class="result">1.95€</p>
         </section>
     </main>
 </body>
